@@ -1,0 +1,44 @@
+.header {
+    background: linear-gradient(to right, rgb(52, 162, 127), rgb(160, 220, 200)); /* Chuyển từ đậm sang nhạt */
+    color: black;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+.navbar .container {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+.navbar .container .navbar-brand {
+    color: black;
+}
+.navbar .container .navbar-nav .nav-link {
+    color: black;
+    border-radius: 18px;
+    padding: 8px 16px;
+}
+.navbar .container .navbar-nav .nav-link.active {
+    background-color: rgba(237, 118, 43, 0.916) !important;
+    color: black !important;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    position: relative;
+}
+
+.navbar-brand::before {
+    content: "🌿"; /* Biểu tượng Unicode cho cành cây */
+    position: absolute;
+    left: -25px; /* Điều chỉnh vị trí bên trái */
+    font-size: 24px;
+}
+
+.navbar-brand::after {
+    content: "🌸"; /* Biểu tượng Unicode cho bông hoa */
+    position: absolute;
+    right: -25px; /* Điều chỉnh vị trí bên phải */
+    font-size: 24px;
+}

@@ -1,0 +1,27 @@
+<app-header></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="image-frame">
+        <img *ngIf="selectedFileUrl; else placeholder" [src]="selectedFileUrl" alt="Product Img"
+          class="product-img img-fluid">
+        <ng-template #placeholder>
+          <div class="placeholder-frame">
+            <p>Image</p>
+          </div>
+        </ng-template>
+      </div>
+      <h3 class="result-text">Trái cây nhận diện : 
+        <span *ngIf="result"> {{ result }} </span>
+      </h3>
+    </div>
+    <div class="col-md-6">
+      <h2>Upload 1 ảnh trái cây</h2>
+      <form (ngSubmit)="onSubmit($event)">
+        <input type="file" (change)="onFileSelected($event)" />
+        <button type="button" (click)="onSubmit($event)">Nhận diện trái cây</button>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- <app-footer></app-footer> -->

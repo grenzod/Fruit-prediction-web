@@ -1,0 +1,45 @@
+h1 {
+    text-align: center;
+}
+
+video {
+    display: block;
+    margin: 0 auto;
+}
+
+.result-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Đẩy nội dung về hai phía */
+    padding: 10px;
+    border: 2px solid #4CAF50;
+    border-radius: 30px;
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    width: 600px; /* Chiều rộng cố định cho khung */
+    max-width: 90%; /* Đảm bảo khung không vượt quá 90% chiều rộng màn hình */
+    margin-left: auto;
+    margin-right: auto; /* Căn giữa khung */
+}
+
+.result-text {
+    margin: 0;
+    font-size: 18px;
+    color: #333; 
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px; 
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+

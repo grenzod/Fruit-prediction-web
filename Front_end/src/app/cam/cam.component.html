@@ -1,0 +1,22 @@
+<app-header></app-header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera Capture</title>
+</head>
+<body>
+    <h1>Nhận diện qua camera</h1>
+    <video id="video" width="640" height="450" autoplay></video>
+    <canvas id="canvas" width="640" height="480" style="display: none;"></canvas>    
+    <script src="script.js"></script>
+
+    <div class="result-container">
+        <h3 class="result-text">Trái cây nhận diện : 
+            <span *ngIf="result"> {{ result }} </span>
+        </h3>
+        <button (click)="capture()">Nhận diện trái cây</button>
+    </div>
+</body>
+</html>
